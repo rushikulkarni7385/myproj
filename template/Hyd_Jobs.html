@@ -1,0 +1,87 @@
+{%load static%}
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/Hyd_Jobs.css' %}">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: #414141">
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="/">Home</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Post Jobs <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Govt Jobs <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+       <ul class="navbar-nav nav-right ">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">SignUp <span class="sr-only">(current)</span></a>
+      </li>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/accounts/login/">LogIn <span class="sr-only">(current)</span></a>
+      </li>
+       </ul>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/accounts/logout/">Logout <span class="sr-only">(current)</span></a>
+      </li>
+       </ul>
+  </div>
+</nav>
+</nav>
+
+
+
+
+
+
+
+
+
+
+<div class="container" align="center">
+    <div class="jumbotron">
+    <h1 class="display-4">WELCOME TO HYDERABAD JOBS</h1>
+    <hr class="my-4">
+    </div>
+</div>
+
+    {%if h %}
+        <table class="table table-striped" border="2">
+            <thead>
+            <th>Comapny Name</th>
+            <th>Job Title</th>
+            <th>Experience</th>
+            <th>Location</th>
+            <th>Salary</th>
+            <th>Qualification</th>
+            </thead>
+            {%for job in h%}
+            <tr>
+            <td>{{job.Company_Name}}</td>
+            <td>{{job.Job_Title}}</td>
+            <td>{{job.Experience}}</td>
+            <td>{{job.Location}}</td>
+            <td>{{job.Salary}}</td>
+                <td>{{job.Qualification}}</td>
+            </tr>
+    {%endfor%}
+
+    {%endif%}
+
+
+</body>
+
+</html>

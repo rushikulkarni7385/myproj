@@ -1,0 +1,64 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"  href="{% static 'css/index.css' %}">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: #414141">
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="/">Home</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="postjob">Post Jobs <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Govt Jobs <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="about">About <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+       <ul class="navbar-nav nav-right ">
+      <li class="nav-item active">
+        <a class="nav-link" href="signup">SignUp <span class="sr-only">(current)</span></a>
+      </li>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/accounts/login/">LogIn <span class="sr-only">(current)</span></a>
+      </li>
+       </ul>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/accounts/logout/">Logout <span class="sr-only">(current)</span></a>
+      </li>
+       </ul>
+  </div>
+</nav>
+</nav>
+
+
+
+<div class="container" align="center">
+    <div class="jumbotron">
+         <h1 class="display-4">WELCOME TO IT JOBS</h1>
+                 <hr class="my-4">
+                    <p id="para">Don't Wait For Your Dream Job Just Work For It</p>
+                        <a class="btn btn-primary btn-m" href="Hyd_Jobs.html" role="button">Hyderabad Jobs</a>&nbsp&nbsp&nbsp&nbsp
+                        <a class="btn btn-primary btn-m" href="Banglore_Jobs.html" role="button">Banglore Jobs</a>&nbsp&nbsp&nbsp&nbsp
+                        <a class="btn btn-primary btn-m" href="Pune_Jobs.html" role="button">Pune Jobs</a>&nbsp&nbsp&nbsp&nbsp
+                        <a class="btn btn-primary btn-m" href="Chennai_Jobs.html" role="button">Chennai Jobs</a>&nbsp&nbsp&nbsp&nbsp
+
+
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+{%block open%}
+<div class="container" align="center">
+    <div class="jumbotron">
+<form method="post">
+    {{form.as_p}}
+    {%csrf_token%}
+    <a class="btn btn-primary" type="submit" href="thanku" role="button">POST JOB</a>
+</form>
+    </div>
+</div>
+
+
+{%endblock open%}
